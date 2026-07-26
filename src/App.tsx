@@ -54,7 +54,7 @@ export default function App() {
       {/* Background Music */}
       <audio
         ref={audioRef}
-        src="/Waramathi Remix  Prashasthi  Srilankan Traditional Song  EDM REMIX  Geesara Lankanath 2023.mp3"
+        src="/handawaka-various-artists.mp3"
         loop
       />
 
