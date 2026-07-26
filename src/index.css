@@ -7,20 +7,18 @@
   --font-display: "Cormorant Garamond", "Abhaya Libre", serif;
   --font-sinhala: "Abhaya Libre", serif;
 
-  --color-brand-pink: #ffffff;
-  --color-brand-blush: #b6c3b6;
-  --color-brand-sakura: #c5a059;
-  --color-brand-sakura-deep: #1b4b36;
-  --color-brand-gold: #d4af37;
-  --color-brand-gold-light: #eaddb6;
-  --color-brand-champagne: #f6f8f6;
-  --color-brand-ivory: #ffffff;
-  --color-brand-warm: #fcfcfc;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-deep: #8A6B1C;
+  --color-brand-gold-light: #F3E5AB;
+  --color-brand-champagne: #F7E7CE;
+  --color-brand-champagne-light: #FDFBF7;
+  --color-brand-champagne-dark: #E2D1B3;
+  --color-brand-white: #FFFFFF;
 }
 
 @layer base {
   body {
-    @apply font-sans bg-brand-ivory text-stone-800 antialiased;
+    @apply font-sans bg-brand-champagne-light text-stone-800 antialiased;
   }
 
   h1,
@@ -39,11 +37,11 @@
   }
 
   .text-gradient-sakura {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-sakura-deep via-brand-sakura to-brand-sakura-deep;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-gold-deep via-brand-gold to-brand-gold-deep;
   }
 
   .border-sakura {
-    @apply border border-brand-sakura/30;
+    @apply border border-brand-gold/30;
   }
 
   .perspective-1000 {
@@ -72,14 +70,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-brand-ivory);
+  background: var(--color-brand-champagne-light);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-brand-blush);
+  background: var(--color-brand-champagne-dark);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-brand-sakura-deep);
+  background: var(--color-brand-gold-deep);
 }

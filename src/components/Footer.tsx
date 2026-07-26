@@ -11,10 +11,11 @@ export const Footer: React.FC = () => {
           style={{ backgroundImage: "url('/ChatGPT Image May 14, 2026, 03_54_56 PM.png')" }}
         />
       </div>
-      <div className="absolute inset-0 bg-brand-warm/20 border-t border-brand-sakura/20 -z-10" />
+      <div className="absolute inset-0 bg-brand-champagne/40 mix-blend-color -z-[9]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-brand-champagne-light/60 via-transparent to-brand-champagne-light/90 border-t border-brand-gold/20 -z-[8]" />
 
       {/* Soft gradient bottom edge glow */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-sakura/10 to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-gold/10 to-transparent pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 relative z-10">
 
@@ -22,35 +23,35 @@ export const Footer: React.FC = () => {
         <div className="relative w-48 h-48 mx-auto mb-16 group cursor-pointer flex items-center justify-center">
 
           {/* Animated decorative rings */}
-          <div className="absolute inset-0 rounded-full border border-brand-sakura/30 animate-[spin_20s_linear_infinite]" />
-          <div className="absolute inset-2 rounded-full border-[1.5px] border-dashed border-brand-sakura/40 animate-[spin_25s_linear_infinite_reverse]" />
+          <div className="absolute inset-0 rounded-full border border-brand-gold/30 animate-[spin_20s_linear_infinite]" />
+          <div className="absolute inset-2 rounded-full border-[1.5px] border-dashed border-brand-gold/40 animate-[spin_25s_linear_infinite_reverse]" />
 
           {/* SVG Spinning Typographic Ring */}
           <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full animate-[spin_30s_linear_infinite] opacity-80 group-hover:opacity-100 transition-opacity duration-700">
             <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
             <text>
-              <textPath href="#circlePath" className="text-[9.5px] uppercase tracking-[0.2em] fill-brand-sakura-deep font-sans font-bold">
-                INDUNIL & SAMADHI • FOREVER •
+              <textPath href="#circlePath" className="text-[9.5px] uppercase tracking-[0.2em] fill-brand-gold-deep font-sans font-bold">
+                JANANI & WARUNA • FOREVER •
               </textPath>
             </text>
           </svg>
 
           {/* Central Logo Disk */}
-          <div className="absolute inset-[3rem] bg-white rounded-full shadow-[0_10px_30px_rgba(251,113,133,0.15)] flex flex-col items-center justify-center border-[4px] sm:border-[5px] border-brand-champagne group-hover:scale-110 group-hover:border-white transition-all duration-700 ease-out z-10">
-            <Heart className="w-4 h-4 text-brand-sakura-deep mb-0.5 fill-brand-sakura/20 animate-pulse" />
-            <span className="font-display text-3xl text-brand-sakura-deep drop-shadow-sm leading-none tracking-tighter">I<span className="text-lg font-serif italic mx-0.5 text-stone-400">&</span>S</span>
+          <div className="absolute inset-[3rem] bg-white rounded-full shadow-[0_10px_30px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center border-[4px] sm:border-[5px] border-brand-champagne group-hover:scale-110 group-hover:border-white transition-all duration-700 ease-out z-10">
+            <Heart className="w-4 h-4 text-brand-gold-deep mb-0.5 fill-brand-gold/20 animate-pulse" />
+            <span className="font-display text-3xl text-brand-gold-deep drop-shadow-sm leading-none tracking-tighter">J<span className="text-lg font-serif italic mx-0.5 text-stone-400">&</span>W</span>
           </div>
 
           {/* Interactive ambient hover glow */}
-          <div className="absolute inset-0 bg-brand-sakura/20 rounded-full blur-2xl pointer-events-none group-hover:bg-brand-sakura-deep/30 transition-colors duration-700 -z-10" />
+          <div className="absolute inset-0 bg-brand-gold/20 rounded-full blur-2xl pointer-events-none group-hover:bg-brand-gold-deep/30 transition-colors duration-700 -z-10" />
         </div>
 
-        <h2 className="text-4xl sm:text-5xl font-display text-stone-800 mb-6 tracking-tight drop-shadow-sm">Indunil & Samadhi</h2>
+        <h2 className="text-4xl sm:text-5xl font-display text-stone-800 mb-6 tracking-tight drop-shadow-sm">Janani & Waruna</h2>
         <p className="text-stone-500 font-serif italic text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-16">
           "A journey of a thousand miles begins with a single step, and we're so incredibly happy to take it together."
         </p>
 
-        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-brand-sakura/50 to-transparent mb-12" />
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-brand-gold/50 to-transparent mb-12" />
 
         <div className="flex flex-col items-center justify-center gap-4">
           <div className="text-[10px] sm:text-xs text-stone-400 font-bold uppercase tracking-[0.3em]">
@@ -58,10 +59,10 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="text-[9px] text-stone-300 tracking-widest uppercase font-medium mt-2">
-            © 2026 Indunil & Samadhi Wedding
+            © 2026 Janani & Waruna Wedding
           </div>
           <div className="text-[9px] text-black tracking-widest uppercase font-medium mt-2">
-            Designed by invitemint - <a href="https://wa.me/94707819074" target="_blank" rel="noopener noreferrer" className="hover:text-brand-sakura-deep transition-colors underline decoration-brand-sakura/50 underline-offset-4">+94707819074</a>
+            Designed by invitemint - <a href="https://wa.me/94707819074" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold-deep transition-colors underline decoration-brand-gold/50 underline-offset-4">+94707819074</a>
           </div>
         </div>
       </div>

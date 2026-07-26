@@ -45,9 +45,9 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, delay: 0.8, ease: "easeOut" }}
-          className="absolute inset-0 flex flex-col items-center justify-start pt-24 sm:pt-40 pointer-events-none z-10"
+          className="absolute inset-0 flex flex-col items-center justify-start pt-12 sm:pt-40 pointer-events-none z-10"
         >
-          <h2 className="font-sinhala text-4xl sm:text-7xl lg:text-8xl tracking-[0.2em] text-center px-6 bg-gradient-to-b from-[#ffffff] via-[#fdf7d5] to-[#d4af37] bg-clip-text text-transparent drop-shadow-[0_8px_20px_rgba(0,0,0,0.3)] filter brightness-125 mb-4 sm:mb-8" style={{ WebkitTextStroke: '1px rgba(212, 175, 55, 0.3)' }}>
+          <h2 className="font-sinhala text-4xl sm:text-7xl lg:text-8xl tracking-[0.2em] text-center px-6 bg-gradient-to-b from-brand-gold via-brand-gold-deep to-stone-800 bg-clip-text text-transparent drop-shadow-[0_4px_10px_rgba(255,255,255,0.5)] mb-4 sm:mb-8" style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.4)' }}>
             ශ්‍රී සුභ මංගලම්
           </h2>
           
@@ -57,13 +57,13 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
             transition={{ duration: 1.5, delay: 1.8 }}
             className="flex flex-col items-center gap-2 sm:gap-4"
           >
-             <div className="h-[1px] w-12 sm:w-20 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent opacity-60" />
-             <div className="flex flex-col items-center font-sinhala text-2xl sm:text-5xl lg:text-6xl text-white/90 drop-shadow-lg tracking-wide" style={{ WebkitTextStroke: '1px rgba(212, 175, 55, 0.4)' }}>
-                <span>ඉඳුනිල්</span>
-                <span className="text-xl sm:text-3xl lg:text-4xl text-[#f3e5ad] italic my-1" style={{ WebkitTextStroke: '0' }}>&</span>
-                <span>සමාධි</span>
+             <div className="h-[1px] w-32 sm:w-48 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent opacity-60" />
+             <div className="flex flex-row items-center justify-center gap-3 sm:gap-6 font-sinhala text-3xl sm:text-5xl lg:text-6xl text-brand-gold-deep drop-shadow-sm tracking-wide whitespace-nowrap" style={{ WebkitTextStroke: '0.5px rgba(255, 255, 255, 0.5)' }}>
+                <span>Janani</span>
+                <span className="text-2xl sm:text-3xl lg:text-4xl text-stone-800 italic" style={{ WebkitTextStroke: '0' }}>&</span>
+                <span>Waruna</span>
              </div>
-             <div className="h-[1px] w-12 sm:w-20 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent opacity-60" />
+             <div className="h-[1px] w-32 sm:w-48 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent opacity-60" />
           </motion.div>
         </motion.div>
       )}
@@ -73,7 +73,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 backdrop-blur-sm transition-opacity z-50">
           <motion.button
             onClick={handleStart}
-            className="px-8 py-4 bg-brand-sakura-deep text-white rounded-full font-display text-2xl shadow-2xl hover:bg-brand-sakura transition-colors flex flex-col items-center gap-2"
+            className="px-8 py-4 bg-brand-gold-deep text-white rounded-full font-display text-2xl shadow-2xl hover:bg-brand-gold transition-colors flex flex-col items-center gap-2"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -89,7 +89,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
           <p className="font-serif text-xl italic">Unable to load the intro video.</p>
           <button
             onClick={onComplete}
-            className="px-6 py-2 bg-brand-sakura-deep rounded-full text-sm uppercase tracking-widest font-bold"
+            className="px-6 py-2 bg-brand-gold-deep rounded-full text-sm uppercase tracking-widest font-bold"
           >
             Enter Website
           </button>
