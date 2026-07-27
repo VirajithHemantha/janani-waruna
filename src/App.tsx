@@ -24,7 +24,7 @@ export default function App() {
   }
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-08-27T09:00:00');
+  const weddingDate = new Date('2026-12-13T07:45:00');
 
   useEffect(() => {
     if (showMain && audioRef.current && !isMusicPlaying) {
@@ -54,7 +54,7 @@ export default function App() {
       {/* Background Music */}
       <audio
         ref={audioRef}
-        src="/handawaka-various-artists.mp3"
+        src="/Neera Film  Suwanda Danee Danenawa  Cover  Supun Perera (mp3cut.net).mp3"
         loop
       />
 
@@ -108,7 +108,7 @@ export default function App() {
               <div className="relative z-10 max-w-5xl mx-auto px-6 flex flex-col items-center text-center">
                 <div className="inline-flex items-center gap-4 mb-6">
                   <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-brand-gold-deep/60" />
-                  <span className="text-brand-gold-deep uppercase tracking-[0.5em] text-[11px] font-semibold font-sans drop-shadow-sm">The Final Countdown</span>
+                  <span className="text-brand-gold-deep uppercase tracking-[0.5em] text-[11px] font-semibold font-sans drop-shadow-sm">Ceremony Countdown</span>
                   <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-brand-gold-deep/60" />
                 </div>
 
@@ -117,7 +117,7 @@ export default function App() {
                 </h2>
 
                 <p className="text-lg sm:text-xl font-serif italic text-stone-600/80 mb-12 sm:mb-16 max-w-2xl text-center leading-relaxed">
-                  Time is standing still as we eagerly await the moment our forever begins.
+                  Time stands still as we await the moment of our forever begins
                 </p>
 
                 <Countdown targetDate={weddingDate} />

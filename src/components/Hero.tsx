@@ -57,8 +57,9 @@ export const Hero: React.FC = () => {
             <div className="h-[1px] w-12 sm:w-16 bg-gradient-to-r from-brand-gold-deep/60 to-transparent" />
           </div>
 
-          <span className="text-brand-gold-deep uppercase tracking-[0.4em] sm:tracking-[0.6em] text-xs sm:text-sm font-medium mb-6 sm:mb-10 block drop-shadow-sm font-sans">
-            Lovely wedding ceremony | ආදරණීය විවාහ මංගල උත්සවය
+          <span className="text-brand-gold-deep uppercase tracking-[0.4em] sm:tracking-[0.6em] text-xs sm:text-sm font-medium mb-6 sm:mb-10 block drop-shadow-sm font-sans text-center">
+            A Celebration of Love <br />
+            <span className="font-sinhala tracking-widest font-normal text-[0.9em] mt-2 inline-block">ආදරයේ මංගල සැමරුම</span>
           </span>
 
           <div className="relative mb-8 sm:mb-12 w-full flex justify-center">
@@ -81,7 +82,7 @@ export const Hero: React.FC = () => {
             <div className="hidden sm:block h-[1px] w-20 bg-gradient-to-r from-transparent to-brand-gold-deep/40" />
             <div className="px-4 text-center max-w-xl space-y-4">
               <p className="text-[1.1rem] sm:text-2xl font-serif italic text-stone-700 tracking-wide leading-relaxed drop-shadow-[0_1px_2px_rgba(255,255,255,0.5)]">
-                Together with our families, we joyfully invite you to join us
+                Together with our families, we request the pleasure of your company to celebrate our wedding
               </p>
               <p className="text-[0.9rem] sm:text-xl font-sinhala text-stone-600 leading-relaxed mt-2">
                 අපගේ පවුල් වල සාමාජිකයින් සමඟ එක්ව, අපගේ විවාහ මංගල උත්සවය සඳහා අප ඔබව මහත් ප්‍රීතියෙන් යුතුව ආරාධනා කර සිටිනවා.

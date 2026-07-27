@@ -41,8 +41,8 @@ export const CoupleDetails: React.FC = () => {
               <span className="text-2xl sm:text-3xl font-sinhala font-normal text-stone-600">ජනනි</span>
             </h3>
             <div className="text-stone-800 font-serif italic font-bold text-base sm:text-lg flex flex-col items-center lg:items-end gap-1 mt-4">
-              <span>Daughter of Mr. & Mrs. Ekanayake</span>
-              <span className="text-sm font-sinhala font-normal text-stone-600">ඒකනායක මහතාගේ සහ මහත්මියගේ දියණිය</span>
+              <span>Daughter of Mr. Ekanayake & Mrs. Wickramaarachchi</span>
+              <span className="text-sm font-sinhala font-normal text-stone-600">ඒකනායක මහතාගේ සහ වික්‍රමආරච්චි මහත්මියගේ දියණිය</span>
             </div>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
@@ -78,8 +78,8 @@ export const CoupleDetails: React.FC = () => {
               <span className="text-2xl sm:text-3xl font-sinhala font-normal text-stone-600">වරුණ</span>
             </h3>
             <div className="text-stone-800 font-serif italic font-bold text-base sm:text-lg flex flex-col items-center lg:items-start gap-1 mt-4 text-center lg:text-left">
-              <span className="text-sm">Son of Late Mr. Ranjith Solanga Arachchi & Mrs. Suneetha Ranwala</span>
-              <span className="text-xs sm:text-sm font-sinhala font-normal text-stone-600 leading-relaxed">අභාවප්‍රාප්ත රංජිත් සෝලංග ආරච්චි මහතාගේ සහ සුනීතා රන්වල මහත්මියගේ පුතණුවන්</span>
+              <span className="text-sm">Son of the late Mr. Solanga Arachchi & Mrs. Ranwala</span>
+              <span className="text-xs sm:text-sm font-sinhala font-normal text-stone-600 leading-relaxed">අභාවප්රාප්ත සෝලංග ආරච්චි මහතා සහ රන්වල මහත්මියගේ පුතණුවන්</span>
             </div>
           </div>
           <div className="hidden lg:flex justify-start mt-8">

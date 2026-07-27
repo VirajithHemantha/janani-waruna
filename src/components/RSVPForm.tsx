@@ -60,7 +60,7 @@ export const RSVPForm: React.FC = () => {
           </div>
 
           <h2 className="text-5xl sm:text-6xl font-display text-stone-800 tracking-tight leading-[1.1] mb-6 drop-shadow-sm">
-            Reserve <span className="italic font-light text-brand-gold-deep">Your</span> Seat
+            Confirm <span className="italic font-light text-brand-gold-deep">Your</span> Presence
           </h2>
 
           <p className="text-stone-500/90 font-serif text-lg leading-relaxed mb-6">

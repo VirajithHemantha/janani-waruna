@@ -30,7 +30,7 @@ export const CeremonyDetails: React.FC = () => {
             </h2>
 
             <p className="text-stone-500/90 font-serif text-lg sm:text-xl leading-relaxed mb-16 max-w-lg">
-              We are honored to invite you to witness our union as we exchange vows in a traditional Poruwa ceremony, surrounded by the beauty of nature and the warmth of our loved ones.
+              Together with our families, we request the honour of your presence, as we exchange vows in a traditional poruwa ceremony and celebrate the beginning of our new chapter together.
             </p>
 
             {/* Premium Timeline */}
@@ -43,8 +43,8 @@ export const CeremonyDetails: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-sans text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-gold-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
-                    <span>Sunday, December 13</span>
-                    <span className="text-xl sm:text-2xl font-sinhala font-normal text-stone-600">දෙසැම්බර් 13 ඉරිදා</span>
+                    <span>Sunday 13 December</span>
+                    <span className="text-xl sm:text-2xl font-sinhala font-normal text-stone-600">දෙසැම්බර් 13 වන ඉරුදින</span>
                   </h4>
                   <p className="text-stone-500/80 text-[14px] sm:text-[16px] uppercase tracking-[0.4em] font-bold">2026</p>
                 </div>
@@ -57,10 +57,10 @@ export const CeremonyDetails: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-sans text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-gold-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
-                    <span>07:45 AM Onwards</span>
+                    <span>07:45 <span className="text-[0.6em] align-baseline">AM</span> onwards</span>
                     <span className="text-xl sm:text-2xl font-sinhala font-normal text-stone-600">පෙ.ව. 07:45 සිට</span>
                   </h4>
-                  <p className="text-stone-500/80 text-[12px] sm:text-[14px] uppercase tracking-normal font-bold mt-1">Poruwa 07:45 AM | පෝරුව පෙ.ව. 07:45</p>
+                  <p className="text-stone-500/80 text-[12px] sm:text-[14px] uppercase tracking-normal font-bold mt-1">PORUWA CEREMONY 7:45 AM | පොරුව චාරිත්ර පෙ.ව 07:45</p>
                 </div>
               </div>
 
@@ -71,10 +71,9 @@ export const CeremonyDetails: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-sans text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-gold-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
-                    <span>Oak Room, Cinnamon Grand</span>
-                    <span className="text-xl sm:text-2xl font-sinhala font-normal text-stone-600">ඕක් රූම්, සිනමන් ග්‍රෑන්ඩ්</span>
+                    <span>Oak Room, Cinnamon Grand Colombo</span>
+                    <span className="text-xl sm:text-2xl font-sinhala font-normal text-stone-600">ඕක් රූම්, සිනමන් ග්රෑන්ඩ් - කොළඹ</span>
                   </h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-normal font-bold">Colombo, Sri Lanka | කොළඹ</p>
                 </div>
               </div>
             </div>
