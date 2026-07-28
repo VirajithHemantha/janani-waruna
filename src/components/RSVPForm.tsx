@@ -6,7 +6,7 @@ import { CheckCircle, Loader2, Heart, Sparkles } from 'lucide-react';
 export const RSVPForm: React.FC = () => {
   const [formData, setFormData] = useState({
     fullName: '',
-    guests: '1',
+    attendance: 'Joyfully Accepts',
     wishes: '',
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -15,18 +15,16 @@ export const RSVPForm: React.FC = () => {
     e.preventDefault();
     setStatus('loading');
 
-    const guestValue = formData.guests;
-
     try {
       await submitToGoogleSheet('rsvp', {
         fullName: formData.fullName,
-        guests: guestValue,
+        attendance: formData.attendance,
         wishes: formData.wishes,
         submittedAt: new Date().toISOString(),
       });
 
       setStatus('success');
-      setFormData({ fullName: '', guests: '1', wishes: '' });
+      setFormData({ fullName: '', attendance: 'Joyfully Accepts', wishes: '' });
     } catch (error) {
       console.error('Error sending RSVP to Google Sheets: ', error);
       setStatus('error');
@@ -116,22 +114,32 @@ export const RSVPForm: React.FC = () => {
                 </div>
 
                 <div>
-                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-3 ml-2">Number of Guests</label>
-                  <div className="relative group">
-                    <select
-                      className="w-full bg-white/80 px-6 py-4 rounded-full border border-stone-200/60 focus:ring-2 focus:ring-brand-gold/30 focus:border-brand-gold-deep/40 outline-none transition-all duration-300 appearance-none font-serif italic text-lg shadow-inner text-stone-700 cursor-pointer"
-                      value={formData.guests}
-                      onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
+                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-4 ml-2">Will you be joining us?</label>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <button
+                      type="button"
+                      onClick={() => setFormData({ ...formData, attendance: 'Joyfully Accepts' })}
+                      className={`flex-1 py-4 px-6 rounded-full border transition-all duration-300 flex items-center justify-center gap-2 ${
+                        formData.attendance === 'Joyfully Accepts'
+                          ? 'bg-brand-gold/10 border-brand-gold-deep text-brand-gold-deep shadow-inner'
+                          : 'bg-white/80 border-stone-200/60 text-stone-500 hover:border-brand-gold/30 hover:bg-white'
+                      }`}
                     >
-                      <option value="1">Just Me (1 Guest)</option>
-                      <option value="2">We are coming! (2 Guests)</option>
-                      <option value="3">3 Guests</option>
-                      <option value="4">4 Guests</option>
-                      <option value="Family">Coming with Family</option>
-                    </select>
-                    <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-brand-gold-deep transition-transform duration-300 group-hover:scale-110">
-                      <Heart className="w-5 h-5 fill-brand-gold/30 drop-shadow-sm" />
-                    </div>
+                      <span className="font-serif italic text-lg">Joyfully Accepts</span>
+                      {formData.attendance === 'Joyfully Accepts' && <Heart className="w-4 h-4 fill-brand-gold-deep" />}
+                    </button>
+                    
+                    <button
+                      type="button"
+                      onClick={() => setFormData({ ...formData, attendance: 'Regretfully Declines' })}
+                      className={`flex-1 py-4 px-6 rounded-full border transition-all duration-300 flex items-center justify-center gap-2 ${
+                        formData.attendance === 'Regretfully Declines'
+                          ? 'bg-stone-100 border-stone-400 text-stone-700 shadow-inner'
+                          : 'bg-white/80 border-stone-200/60 text-stone-500 hover:border-stone-300 hover:bg-white'
+                      }`}
+                    >
+                      <span className="font-serif italic text-lg">Regretfully Declines</span>
+                    </button>
                   </div>
                 </div>
 
