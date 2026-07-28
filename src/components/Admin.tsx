@@ -6,7 +6,7 @@ export const Admin: React.FC = () => {
   const [generatedLink, setGeneratedLink] = useState('');
   const [fullMessage, setFullMessage] = useState('');
 
-  const prefixes = ['Mr.', 'Mrs.', 'Miss', 'Mr. & Mrs.', 'Family', 'Dear'];
+  const prefixes = ['Mr.', 'Mrs.', 'Miss', 'Mr. & Mrs.', 'Dr.', 'Family', 'Dear'];
 
   const generate = () => {
     if (!guestName.trim()) return;

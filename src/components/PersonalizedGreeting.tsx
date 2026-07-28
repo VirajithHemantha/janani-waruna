@@ -24,6 +24,7 @@ export const PersonalizedGreeting: React.FC = () => {
       else if (prefix === "Miss") setGreeting("Dear");
       else if (prefix === "Dear") setGreeting("Dear");
       else if (prefix === "Mr. & Mrs.") setGreeting("Dear");
+      else if (prefix === "Dr.") setGreeting("Dear");
       else if (prefix === "Family") setGreeting("Dear");
       else setGreeting("Dear");
     }
