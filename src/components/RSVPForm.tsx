@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { submitToGoogleSheet } from '../googleSheets';
 import { CheckCircle, Loader2, Heart, Sparkles } from 'lucide-react';
@@ -10,6 +10,18 @@ export const RSVPForm: React.FC = () => {
     wishes: '',
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const guest = params.get('guest');
+    const prefix = params.get('prefix');
+
+    if (guest) {
+      const formattedName = decodeURIComponent(guest).replace(/-/g, ' ');
+      const prefixStr = prefix && prefix !== 'Dear' ? `${prefix} ` : '';
+      setFormData(prev => ({ ...prev, fullName: `${prefixStr}${formattedName}` }));
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

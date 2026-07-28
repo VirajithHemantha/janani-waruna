@@ -47,7 +47,10 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
           transition={{ duration: 2, delay: 0.8, ease: "easeOut" }}
           className="absolute inset-0 flex flex-col items-center justify-start pt-12 sm:pt-40 pointer-events-none z-10"
         >
-          <h2 className="font-sinhala text-4xl sm:text-7xl lg:text-8xl tracking-[0.2em] text-center px-6 text-black drop-shadow-[0_4px_10px_rgba(255,255,255,0.5)] mb-4 sm:mb-8">
+          <h2 
+            className="font-sinhala text-4xl sm:text-7xl lg:text-8xl tracking-[0.2em] text-center px-6 text-brand-gold drop-shadow-[0_4px_10px_rgba(255,255,255,0.5)] mb-4 sm:mb-8"
+            style={{ WebkitTextStroke: '1px white' }}
+          >
             ශ්‍රී සුභ මංගලම්
           </h2>
           
@@ -58,9 +61,12 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
             className="flex flex-col items-center gap-2 sm:gap-4"
           >
              <div className="h-[1px] w-32 sm:w-48 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent opacity-60" />
-             <div className="flex flex-row items-center justify-center gap-3 sm:gap-6 font-sinhala text-3xl sm:text-5xl lg:text-6xl text-black drop-shadow-sm tracking-wide whitespace-nowrap">
+             <div 
+               className="flex flex-row items-center justify-center gap-3 sm:gap-6 font-sinhala text-3xl sm:text-5xl lg:text-6xl text-brand-gold drop-shadow-sm tracking-wide whitespace-nowrap"
+               style={{ WebkitTextStroke: '1px white' }}
+             >
                 <span>Janani</span>
-                <span className="text-2xl sm:text-3xl lg:text-4xl text-black italic">&</span>
+                <span className="text-2xl sm:text-3xl lg:text-4xl text-brand-gold italic" style={{ WebkitTextStroke: '1px white' }}>&</span>
                 <span>Waruna</span>
              </div>
              <div className="h-[1px] w-32 sm:w-48 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent opacity-60" />

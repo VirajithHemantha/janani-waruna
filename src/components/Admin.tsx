@@ -15,7 +15,26 @@ export const Admin: React.FC = () => {
     const link = `${window.location.origin}/?prefix=${encodeURIComponent(prefix)}&guest=${encodeURIComponent(formattedName)}`;
     setGeneratedLink(link);
 
-    const msg = `Dear ${prefix} ${guestName} ❤️\n\nWith joyful hearts, we warmly invite you to celebrate one of the most special days of our lives as we begin our journey together.\n\nPlease view our wedding invitation and all the event details through the link below 🌐:\n\n${link}\n\nYour presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.\n\nWith love,\n❤️ Janani & Waruna`;
+    const msg = `Dear ${prefix === 'Dear' ? '' : prefix + ' '}${guestName},
+
+Together with our families, we are delighted to invite you to share in one of the most cherished moments of our lives as we celebrate our wedding.
+
+Please view our wedding invitation using the link below:
+
+${link}
+
+Your presence would be the greatest gift to us, and we would be truly honoured to celebrate this joyous occasion with you.
+
+අපගේ ජීවිතයේ ඉතාමත් සුවිශේෂීම දිනය සැමරීම සඳහා ඔබට ආදරයෙන් ආරාධනා කරමු.
+
+පහත සබැඳිය ඔස්සේ අපගේ විවාහ ආරාධනාව නරඹන්න.
+
+${link}
+
+අපගේ ජීවිතයේ මෙම සුවිශේෂී මොහොතට ඔබගේ සම්භාවනීය පැමිණීම අපට ඉමහත් සතුටක් මෙන්ම අමරණීය මතකයක් වනු ඇත. අපගේ ආරාධනය ආදරයෙන් පිළිගෙන, මෙම සුන්දර අවස්ථාවට අප සමඟ එක්වන ලෙස ඉතා ගෞරවයෙන් ආරාධනා කරමු.
+
+With love,
+Janani & Waruna`;
     setFullMessage(msg);
   };
 

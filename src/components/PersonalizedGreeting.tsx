@@ -58,25 +58,32 @@ export const PersonalizedGreeting: React.FC = () => {
         <Sparkles className="absolute top-8 right-8 w-6 h-6 text-brand-gold/50 animate-pulse" />
         <Sparkles className="absolute bottom-8 left-8 w-4 h-4 text-brand-gold/40 animate-pulse" />
 
-        <div className="inline-flex items-center gap-4 mb-6">
-          <div className="w-8 sm:w-12 h-[1px] bg-gradient-to-r from-transparent to-brand-gold-deep/60" />
-          <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-gold-deep font-bold font-sans drop-shadow-sm">
-            WE CORDIALLY INVITE
+        <div className="flex flex-col items-center gap-2 mb-6">
+          <div className="inline-flex items-center gap-4">
+            <div className="w-8 sm:w-12 h-[1px] bg-gradient-to-r from-transparent to-brand-gold-deep/60" />
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-gold-deep font-bold font-sans drop-shadow-sm">
+              WE CORDIALLY INVITE
+            </p>
+            <div className="w-8 sm:w-12 h-[1px] bg-gradient-to-l from-transparent to-brand-gold-deep/60" />
+          </div>
+          <p className="text-[12px] sm:text-sm text-brand-gold-deep font-bold drop-shadow-sm">
+            ඔබට අපගේ හෘදයාංගම ආරාධනයයි!
           </p>
-          <div className="w-8 sm:w-12 h-[1px] bg-gradient-to-l from-transparent to-brand-gold-deep/60" />
         </div>
 
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display text-stone-800 mb-6 drop-shadow-sm capitalize flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
-          <span className="text-xl sm:text-3xl font-serif italic text-brand-gold-deep/80">{prefixStr}</span>
+          <span className="text-xl sm:text-3xl font-serif italic text-brand-gold-deep/80">{prefixStr === 'Dear' ? '' : prefixStr}</span>
           <span className="bg-gradient-to-r from-stone-800 to-stone-600 bg-clip-text text-transparent font-bold">
             {guestName}
           </span>
         </h2>
 
         <div className="font-serif text-lg sm:text-2xl text-stone-700 leading-relaxed space-y-4">
-          <p className="text-brand-gold-deep font-bold text-xl sm:text-3xl">{greeting},</p>
           <p className="max-w-md mx-auto">
             We joyfully invite you to share in our happiness on our wedding day.
+          </p>
+          <p className="max-w-md mx-auto text-[17px] sm:text-[20px]">
+            අපගේ මංගල දිනයේ සතුට ඔබ සමඟ බෙදා ගැනීමට අපි ඉතා ප්රීතියෙන් ආරාධනා කරමු.
           </p>
         </div>
       </motion.div>
